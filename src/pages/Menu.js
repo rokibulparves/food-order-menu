@@ -12,7 +12,7 @@ const Menu = ({table_No}) => {
     { id: 1, name: 'Burger', price: 10, image: burgerImage, category: 'Main Course' },
     { id: 2, name: 'Pizza', price: 12, image: pizzaImage, category: 'Main Course' },
     { id: 3, name: 'Salad', price: 8, image: saladImage, category: 'Appetizer' },
-    { id: 4, name: 'Pasta', price: 9, image: pastaImage, category: 'Main Course' },
+    { id: 4, name: 'Pasta', price: 9, image: pastaImage, category: 'Main Course' }
   ];
 
   const [cartItems, setCartItems] = useState([]);
@@ -65,7 +65,7 @@ const Menu = ({table_No}) => {
     return (
       <div className="menu-container">
         <div className="left-section">
-          <h2>Food Categories</h2>
+          <h2 className='heading'>Food Categories</h2>
           <ul className="category-list">
             {foodCategories.map(category => (
               <li key={category}>
@@ -79,6 +79,8 @@ const Menu = ({table_No}) => {
             ))}
           </ul>
       </div>
+
+      <span className='vl'></span>
 
     <div className="menu">
       <h2 className="heading">Menu</h2>
@@ -115,6 +117,8 @@ const Menu = ({table_No}) => {
       </ul>
     </div>
 
+    <span className='vl-2'></span>
+
     <div className="order">
         <h2 className="heading">Order for Table {table_No}</h2>
         <ul className="cart-list">
@@ -131,7 +135,7 @@ const Menu = ({table_No}) => {
             Submit Order
           </button>
         )}
-        {orderSubmitted && <p>Order submitted successfully!</p>}
+        {orderSubmitted && <p>Order submitted successfully! Your food is preparing to serve</p>}
       </div>
     </div>
     );

@@ -1,10 +1,40 @@
 /* Menu.css */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans&family=Lora&family=Merienda:wght@600&family=Nunito:wght@300&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  /* background-image: url(../assets/background.jpg); */
+}
 
 /* Container for the entire menu section */
 .menu-container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+.heading {
+  font-size: 50px;
+}
+
+.vl {
+  border-left: 1px solid #d4dadd;
+  height: 900px;
+  position: absolute;
+  left: 200px;
+  /* margin-left: -3px; */
+  margin-top: 85px;
+  top: 0;
+}
+
+.vl-2 {
+  border-left: 1px solid #d4dadd;
+  height: 900px;
+  position: absolute;
+  right: 330px;
+  /* margin-left: -3px; */
+  margin-top: 85px;
+  top: 0;
 }
 
 /* Left section for food categories */
@@ -143,11 +173,12 @@
 }
 
 .total-amount {
+  font-weight: bold;
   font-size: 1.3rem;
   margin-top: 20px;
 }
 
-.submit-button {
+/* .submit-button {
   background-color: #28a745;
   color: #fff;
   border: none;
@@ -156,11 +187,42 @@
   border-radius: 5px;
   font-size: 1.2rem;
   margin-top: 20px;
-}
+} */
 
-/* Confirmation message */
+/* Confirmation message */button-62total-amount
 .order p {
   font-size: 1.2rem;
   color: #28a745;
   margin-top: 10px;
+}
+
+/* CSS */
+.submit-button {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.submit-button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.submit-button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
